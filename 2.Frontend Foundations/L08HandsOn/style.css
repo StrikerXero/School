@@ -1,0 +1,16 @@
+input{
+    color: red;
+
+}
+body{
+    background-color: blueviolet;
+    font-family: monospace;
+    text-align: center;
+}
+header{
+    text-align: center;
+    font-size: 40px;
+}
+li{
+    text-align: left;
+}
