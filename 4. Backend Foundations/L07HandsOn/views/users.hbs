@@ -1,0 +1,25 @@
+<H1>List of Users</H1>
+
+{{userid}}
+{{UserId}}
+{{UserID}}
+<table>
+  <tr>
+    <th>UserID</th>
+    <th>Username</th>
+    <th>Name</th>
+    <th>Email</th>
+    <th>Admin Status</th>
+  </tr>
+  {{#each users}}
+    <a href="/{{userid}}">
+      <tr>
+        <td>{{userid}}</td>
+        <td>{{username}}</td>
+        <td>{{firstname}} {{lastname}}</td>
+        <td>{{email}}</td>
+        <td>{{admin}}</td>
+      </tr>
+    </a>
+  {{/each}}
+</table>
