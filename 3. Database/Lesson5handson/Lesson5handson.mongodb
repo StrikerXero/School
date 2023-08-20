@@ -1,0 +1,360 @@
+// // db.employees.insertMany([
+// //     {
+// //         Name: "Alison Davidson",
+// //         Birthday: new Date(1975-04-05),
+// //         Address: "874 W. Oak Place",
+// //         City: "Gary",
+// //         State: "Indiana",
+// //         Position: 
+// //         { 
+// //             "Position Name": "Customer Support",
+// //             Remote: true,
+// //             "Full Time": true
+// //         }    
+// //     },
+// //     {
+// //         Name: "Henry Chapeleton",
+// //         Birthday: new Date(1980-09-29),
+// //         Address: "9324 E. Vista Way",
+// //         City: "Tempe",
+// //         State: "Arizona",
+// //         Position: 
+// //         { 
+// //             "Position Name": "Customer Support",
+// //             Remote: false,
+// //             "Full Time": true
+// //         }       
+// //     },
+// //     {
+// //         Name: "Alex Miller",
+// //         Birthday: new Date(1983-11-22),
+// //         Address: "244 Price Road",
+// //         City: "Mesa",
+// //         State: "Arizona",
+// //         Position: 
+// //         { 
+// //             "Position Name": "Customer Support",
+// //             Remote: false,
+// //             "Full Time": false
+// //         }     
+// //     },
+// //     {
+// //         Name: "Carly Nielson",
+// //         Birthday: new Date(1987-08-04),
+// //         Address: "678 W. Westward Road",
+// //         City: "Phoenix",
+// //         State: "Arizona",
+// //         Position: 
+// //         { 
+// //             "Position Name": "Office Manager",
+// //             Remote: false,
+// //             "Full Time": true
+// //         }      
+// //     },
+// //     {
+// //         Name: "Tom Talbot",
+// //         Birthday: new Date(1989-12-30),
+// //         Address: "12 Oakland Way",
+// //         City: "Chandler",
+// //         State: "Arizona",
+// //         Position: 
+// //         { 
+// //             "Position Name": "Inventory Manager",
+// //             Remote: false,
+// //             "Full Time":true
+// //         }      
+// //     },
+// //     {
+// //         Name: "Mary Crawley",
+// //         Birthday: new Date (1980-07-06),
+// //         Address: "1010 Granite Way",
+// //         City: "Charlotte",
+// //         State: "North Carolina",
+// //         Position: 
+// //         { 
+// //             "Position Name": "Human Resources",
+// //             Remote: true,
+// //             "Full Time": true
+// //         }     
+// //     },
+// //     {
+// //         Name: "Daisy Baxter",
+// //         Birthday: new Date (1987-09-09),
+// //         Address: "990 E. 84th St.",
+// //         City: "Tempe",
+// //         State: "Arizona",
+// //         Position: 
+// //         { 
+// //             "Position Name": "CEO",
+// //             Remote: false,
+// //             "Full Time": true
+// //         }      
+// //     },
+// //     {
+// //         Name: "William Coyle",
+// //         Birthday: new Date (1991-10-11),
+// //         Address: "944 W. 16th St.",
+// //         City: "Phoenix",
+// //         State: "Arizona",
+// //         Position: 
+// //         { 
+// //             "Position Name": "Intern",
+// //             Remote: false,
+// //             "Full Time": false
+// //         }      
+// //     },
+// //     {
+// //         Name: "Edith Bates",
+// //         Birthday: new Date (1990-07-28),
+// //         Address: "7 E. 20th Pl.",
+// //         City: "Chandler",
+// //         State: "Arizona",
+// //         Position: 
+// //         { 
+// //             "Position Name": "Customer Support",
+// //             Remote: false,
+// //             "Full Time": true
+// //         }       
+// //     },
+// //     {
+// //         Name: "Gwen Harding",
+// //         Birthday: new Date (1986-10-11),
+// //         Address: "234 W. 48th. St",
+// //         City: "Phoenix",
+// //         State: "Arizona",
+// //         Position: 
+// //         { 
+// //             "Position Name": "Office Assistant",
+// //             Remote: false,
+// //             "Full Time": true
+// //         }     
+// //     }
+// // ]);
+
+// // db.employees.updateOne({Name: "Mary Crawley"}, {$set : {Address: "8322 W. Vista Pl.", City : "Scottsdale", State : "AZ"}});
+
+// // db.employees.updateMany({}, {$unset: {State: ""}});
+
+// //Compound Index
+// // db.employees.createIndex({
+// //     "Position.Position Name": 1,
+// //     "Position.Remote": 1,
+// //     "Position.Full Time": 1
+// // });
+
+// //db.employees.dropIndex({Position: 1});
+// //db.employees.dropIndex({"Position.Position Name": 1});
+// // db.employees.getIndexes({});
+
+// // db.songs.insertMany([
+// //     {
+// //         songId: ,
+// //         title: "",
+// //         details:
+// //         {
+// //             artist: "",
+// //             album: "",
+// //             releaseYear: 
+// //         }
+// //     },
+// // ]);
+
+// db.songs2.insertMany([
+//     {
+//         songId: 1,
+//         title: "Girls Just Want To Have Fun",
+//         details:
+//         {
+//             artist: "Cyndi Lauper",
+//             album: "She's So Unusual",
+//             releaseYear: 1983
+//         }
+//     },
+//     {
+//         songId: 2,
+//         title: "Hips Don't Lie",
+//         details:
+//         {
+//             artist: "Shakira feat. Wyclef Jean",
+//             album: "Oral Fixation Vol. 2",
+//             releaseYear: 2006
+//         }
+//     },
+//     {
+//         songId: 3,
+//         title: "Poker Face",
+//         details:
+//         {
+//             artist: "Lady Gaga",
+//             album: "The Fame",
+//             releaseYear: 2008
+//         }
+//     },
+//     {
+//         songId: 4,
+//         title: "Wannabe",
+//         details:
+//         {
+//             artist: "Spice Girls",
+//             album: "Spice",
+//             releaseYear: 1996
+//         }
+//     },
+//     {
+//         songId: 5,
+//         title: "California Gurls",
+//         details:
+//         {
+//             artist: "Katy Perry feat. Snoop Dogg",
+//             album: "Teenage Dream",
+//             releaseYear: 2010
+//         }
+//     },
+//     {
+//         songId: 6,
+//         title: "Bye, Bye, Bye",
+//         details:
+//         {
+//             artist: "NSYNC",
+//             album: "No Strings Attached",
+//             releaseYear: 2000
+//         }
+//     },
+//     {
+//         songId: 7,
+//         title: "I Will Always Love You",
+//         details:
+//         {
+//             artist: "Whitney Houston",
+//             album: "I Will Always Love You: The Best of Whitney Houston",
+//             releaseYear: 2012
+//         }
+//     },
+//     {
+//         songId: 8,
+//         title: "Baby One More Time",
+//         details:
+//         {
+//             artist: "Britney Spears",
+//             album: "Baby One More Time",
+//             releaseYear: 1999
+//         }
+//     },
+//     {
+//         songId: 9,
+//         title: "Vogue",
+//         details:
+//         {
+//             artist: "Madonna",
+//             album: "I'm Breathless",
+//             releaseYear: 1990
+//         }
+//     },
+//     {
+//         songId: 10,
+//         title: "Rolling in the Deep",
+//         details:
+//         {
+//             artist: "Adele",
+//             album: "21",
+//             releaseYear: 2011
+//         }
+//     },
+//     {
+//         songId: 11,
+//         title: "1234",
+//         details:
+//         {
+//             artist: "Feist",
+//             album: "The Reminder",
+//             releaseYear: 2007
+//         }
+//     },
+//     {
+//         songId: 12,
+//         title: "Elastic Heart",
+//         details: 
+//         {
+//             artist: "Sia",
+//             album: "The Hunger Games: Catching Fire Soundtrack",
+//             releaseYear: 2015
+//         }
+//     },
+//     {
+//         songId: 13,
+//     	title: "Oops! I Did It Again",
+//         details:
+//         {
+//             artist: "Britney Spears",
+//             album: "Oops! I Did It Again",
+//             releaseYear: 2000
+//         }
+//     },
+//     {
+//         songId: 14,
+//         title: "Bad Romance",
+//         details: 
+//         {
+//             artist: "Lady Gaga",
+//             album: "The Fame Monster",
+//             releaseYear: 2009
+//         }
+//     },
+//     {
+//         songId: 15,
+//         title: "Lose Control",
+//         details: 
+//         {
+//             artist: "Missy Elliot",
+//         	album: "The Cookbook",
+//             releaseYear: 2005
+//         }
+//     },
+//     {
+//         songId: 16,
+//         title: "U Can't Touch This",
+//         details:
+//         {
+//             artist: "MC Hammer",
+//         	album: "Please Hammer, Don't Hurt 'Em",
+//             releaseYear: 1990
+//         }
+//     },
+//     {
+//         songId: 17,
+//         title: "Thriller",
+//         details: 
+//         {
+//             artist: "Michael Jackson",
+//             album: "Thriller",
+//             releaseYear: 1982
+//         }
+//     },
+//     {
+//         songId: 18,
+//         title: "Single Ladies",
+//     	details: 
+//         {
+//             artist: "Beyonce",
+//             album: "I am... Sasha Fierce",
+//             releaseYear: 2008
+//         }
+//     },
+//     {
+//         songId: 19,
+//         title: "Rhythm Nation",
+//         details: 
+//         {
+//             artist: "Janet Jackson",
+//             album: "Janet Jackson's Rhythm Nation 1814",
+//         	releaseYear: 1989
+//         }
+//     }
+// ]);
+
+// // db.songs.updateMany({},{$rename: {"title":"songTitle"}});
+
+// db.songs2.find({});
+
+// db.songs.updateMany({},{$rename: {"details.artist":"artist"}});
+db.songs.find({});

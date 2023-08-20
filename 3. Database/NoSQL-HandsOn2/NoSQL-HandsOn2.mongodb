@@ -1,0 +1,83 @@
+//no foreign
+//jodi foster
+
+//Comedy II
+//drama
+//Horror
+//Thrillers
+
+//<=120min
+
+//Foreign is considered a genre and since all three like comedies 
+//I will only look for comedies
+// db.movies.find({$and: [
+//     {director:{$ne:"Jodi Foster"}},
+//     {genre:{$eq:"Comedy"}},
+//     {lengthInMin: {$lte:120}}]});
+
+
+//I guess if you want to be a bit more verbatim about it...
+db.movies.find({$and:[
+    //Sally
+    {$and: 
+    [        
+        {genre:{$ne:"Foreign"}},
+        {$or:
+            [
+                {genre:{$eq:"Comedy"}},
+                {genre:{$eq:"Drama"}}
+    ]}]},
+    //Robert
+    {$and:
+    [
+        {director:{$ne:"Jodi Foster"}},
+        {$or:
+            [
+                {genre:{$eq:"Comedy"}},
+                {genre:{$eq:"Horror"}}
+    ]}]},
+    //Stewart
+    {$and:
+    [
+        {lengthInMin:{$lte:120}},
+        {$or:
+            [
+                {genre:{$eq:"Thriller"}},
+                {genre:{$eq:"Comedy"}}
+    ]}]}
+]},
+{title: 1, _id: 0}
+);
+
+
+// db.movies.find({$and: 
+//     [        
+//         {genre:{$ne:"Foreign"}},
+//         {$or:
+//             [
+//                 {genre:{$eq:"Comedy"}},
+//                 {genre:{$eq:"Drama"}}
+//             ]
+// }]});
+
+// db.movies.find({$and:
+//     [
+//         {director:{$ne:"Jodi Foster"}},
+//         {$or:
+//             [
+//                 {genre:{$eq:"Comedy"}},
+//                 {genre:{$eq:"Horror"}}
+//             ]
+// }]});
+
+// db.movies.find({$and:
+//     [
+//         {lengthInMin:{$lte:120}},
+//         {$or:
+//             [
+//                 {genre:{$eq:"Thriller"}},
+//                 {genre:{$eq:"Comedy"}}
+//             ]}
+//     ]
+// });
+
