@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <title>Kanban Cards Input</title>
+  </head>
+  <body>
+    <header><h1>L10HandsOn</h1></header>
+    <main>
+      <div class="left">
+        <h3>Card Input</h3>
+        <br />
+        <form id="cardEntry">
+          <label for="title">Title:</label>
+          <input
+            type="text"
+            id="title"
+            name="title"
+            placeholder="Title"
+            required
+          />
+          <br />
+          <label for="owner">Owner:</label>
+          <input
+            type="text"
+            id="owner"
+            name="owner"
+            placeholder="Owner"
+            required
+          />
+          <br />
+          <label for="start">Start Date:</label>
+          <input type="date" id="start" />
+          <br />
+          <label for="deadLine">DeadLine:</label>
+          <input type="date" id="deadLine" />
+          <br />
+          <label for="tasks">Tasks:</label>
+          <input
+            type="text"
+            id="tasks"
+            name="tasks"
+          />
+          <br />
+          <button type="reset">Clear</button>
+        </form>
+        <button type="submit" onclick="postData()">Create Card</button>
+        <br /><br />
+      </div>
+      <button onclick="getData()">Get</button>
+      <br /><br />
+      <div id="updateDelete">
+        <label for="cardID">Card ID to update or delete</label>
+        <input type="text" id="cardIdInput" />
+        <button type="submit" onclick="updateCard()">Update Data</button>
+        <button type="submit" onclick="deleteCard()">Delete Card</button>
+      </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="main.js"></script>
+  <footer><h5>You have to use the get button and console to see the data and status... sorry! <br> the card id field requires the cards ID its assigned not position in the array</h5></footer>
+  </body>
+</html>
