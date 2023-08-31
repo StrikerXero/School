@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title> Tour of Heroes </ion-title>
+    <ion-nav>
+      <!-- <a routerLink="/">Home</a> -->
+      <a routerLink="/heroes">Heroes</a>
+      <a routerLink="/dashboard">Dashboard</a>
+    </ion-nav>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <h2>Top Heroes</h2>
+  <div class="heroes-menu">
+    <a *ngFor="let hero of heroes" routerLink="/detail/{{hero.id}}">
+      {{ hero.name }}
+    </a>
+  </div>
+</ion-content>
+<!-- <span class="badge">{{hero.id}}</span>
+routerLink="/detail/{{hero.id}} -->

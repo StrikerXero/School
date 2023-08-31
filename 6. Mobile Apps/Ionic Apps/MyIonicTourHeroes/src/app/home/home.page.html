@@ -1,0 +1,16 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title> Tour of Heroes </ion-title>
+    <ion-nav>
+      <!-- <a routerLink="/">Home</a> -->
+      <a routerLink="/heroes">Heroes</a>
+      <a routerLink="/dashboard">Dashboard</a>
+    </ion-nav>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <app-heroes></app-heroes>
+  <app-messages></app-messages>
+  <ion-router-outlet></ion-router-outlet>
+</ion-content>
