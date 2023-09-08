@@ -1,1 +1,19 @@
+We were instructed to use Replit.com for our final projects. Code and deployed projects are hosted there and the links are below.
+All projects can be polished and added to. Its unlikely that i will finish them but will polish them up. With what I learned I am
+building new fleshed out apps instead of projects just to show a concept.
 
+Discord Bot: https://replit.com/@StrikerXero1/discord-bot-node
+
+Repl Console Chat App:
+  Client: https://replit.com/@StrikerXero1/repl-chat-client2
+  Server: https://replit.com/@StrikerXero1/repl-chat-server
+
+Stripe Payment API using example eCommerce Site:
+  V12 API:
+    Frontend: https://replit.com/@StrikerXero1/BrickSiteV12
+    Backend: https://replit.com/@StrikerXero1/stripe-checkout-server-V12
+  OlderAPI:
+    Frontend: https://replit.com/@StrikerXero1/BrickSite-OlderAPI
+    BackEnd: https://replit.com/@StrikerXero1/StripeCheckOutOlderAPI
+
+GraphQL PodCast: https://replit.com/@StrikerXero1/GraphQL
